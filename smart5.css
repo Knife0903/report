@@ -1,0 +1,335 @@
+@media(max-width:2000px) {
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    header {
+        height:95px;
+    }
+
+    .logo {
+        height:75px;
+        margin-top: 7px;
+        margin-left: 14%;
+        margin-right:7%;
+    }
+
+    .header-menu a {
+        line-height: 30px;
+        padding: 17px 30px;
+        width:175px;
+        font-size: 24px;
+        margin-top: -18px;
+    }
+
+    .header-menu span {
+        font-size: 20px;
+    }
+    
+    .main {
+        margin-top:150px;
+    }
+    
+}
+
+@media(max-width:1680px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    header {
+        height:95px;
+    }
+
+    .logo {
+        height:75px;
+        margin-top: 7px;
+        margin-left: 12%;
+        margin-right:6%;
+    }
+
+    .header-menu a {
+        line-height: 30px;
+        padding: 17px 30px;
+        width:175px;
+        font-size: 24px;
+        margin-top: -18px;
+    }
+
+    .header-menu span {
+        font-size: 20px;
+    }
+    
+    
+}
+
+@media(max-width:1600px) {
+    
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    header {
+        height:95px;
+    }
+
+    .logo {
+        height:75px;
+        margin-top: 7px;
+        margin-left: 10%;
+        margin-right:5%;
+    }
+
+    .header-menu a {
+        line-height: 30px;
+        padding: 17px 24px;
+        width:155px;
+        font-size: 24px;
+        margin-top: -18px;
+    }
+
+    .header-menu span {
+        font-size: 20px;
+    }
+    
+    
+}
+
+@media(max-width:1280px) {
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    header {
+        height:80px;
+    }
+
+    .logo {
+        height:65px;
+        margin-top: 7px;
+        margin-left: 5%;
+        margin-right:2%;
+    }
+
+    .header-menu a {
+        line-height: 25px;
+        padding: 13px 20px;
+        width:135px;
+        font-size: 21px;
+        margin-top: -16px;
+    }
+
+    .header-menu span {
+        font-size: 18px;
+    }
+    
+    
+}
+
+@media(max-width:1024px) {
+    
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    header {
+        height:65px;
+    }
+
+    .logo {
+        height:50px;
+        margin-top: 7px;
+        margin-left: 4%;
+        margin-right:2%;
+    }
+
+    .header-menu a {
+        line-height: 20px;
+        padding: 11px 20px;
+        width:125px;
+        font-size: 18px;
+        margin-top: -16px;
+    }
+
+    .header-menu span {
+        font-size: 14px;
+    }
+    
+    
+
+}
+
+@media(max-width:799px) {
+    header {
+        height:50px;
+    }
+
+    .logo {
+        height:35px;
+        margin-top: 10px;
+        margin-left: 40%;
+    }
+    
+    .header-menu {
+        display:none;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .br {
+        display:block;
+    }
+
+    .footer2 {
+        font-size: 15px;
+    }
+
+    
+}
+
+@media(max-width:699px) {
+    header {
+        height:50px;
+    }
+
+    .logo {
+        height:35px;
+        margin-top: 10px;
+        margin-left: 37%;
+    }
+    
+    .header-menu {
+        display:none;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .br {
+        display:block;
+    }
+
+    .footer2 {
+        font-size: 15px;
+    }
+
+    
+}
+
+@media(max-width:599px) {
+    header {
+        height:50px;
+    }
+
+    .logo {
+        height:35px;
+        margin-top: 10px;
+        margin-left: 35%;
+    }
+    
+    .header-menu {
+        display:none;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .br {
+        display:block;
+    }
+
+    .footer2 {
+        font-size: 15px;
+    }
+
+    
+}
+
+@media(max-width:499px) {
+    header {
+        height:50px;
+    }
+
+    .logo {
+        height:35px;
+        margin-top: 10px;
+        margin-left: 33%;
+    }
+    
+    .header-menu {
+        display:none;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .br {
+        display:block;
+    }
+
+    .footer2 {
+        font-size: 15px;
+    }
+
+    
+}

@@ -1,0 +1,477 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    width: 1920px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 28px;
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-family: KaiTi;
+}
+
+h2 {
+    font-size: 15px;
+    display: block;
+    margin: 0;
+    text-align: center;
+    color:#7e4605;
+}
+
+header {
+    height:85px;
+    border-bottom: 3px solid #f81c04;
+    border-image: linear-gradient(to right, #f81c04 0%, rgb(246, 255, 0) 33%, #0dff00 67%, blue 100%);
+    border-image-slice: 1;
+    background-color: rgba(255, 255, 249, 0.95);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.logo {
+    height:60px;
+    float:left;
+    margin-top: 13px;
+    margin-left: 120px;
+    margin-right: 70px;
+}
+
+.header-menu a {
+    line-height: 24px;
+    padding: 17px 30px;
+    color: rgb(40, 30, 30);
+    float: left;
+    transition: all 0.5s;
+    text-align: center;
+    width:135px;
+    font-family: KaiTi;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-top: -16px;
+}
+
+.header-menu a:hover {
+    background-color: #0dff004a;
+}
+
+.header-menu span {
+    font-size: 13px;
+}
+
+footer {
+    background-color: #47545c;
+    padding-bottom: 30px;
+    margin-top: 65px;
+    display: block;
+}
+
+.footer2 {
+    font-family: DFKai-SB;
+    text-align: center;
+    line-height: 34px;
+    color: #bbc0c4;
+    padding-top: 30px;
+}
+/*hamburger-menu*/
+.menu-btn {
+    position: fixed;
+    top: 3px;
+    right: 10px;
+    display: flex;
+    height: 42px;
+    width: 42px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: rgba(255, 255, 249, 0.95);
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #252525;
+    position: absolute;
+}
+
+.menu-btn span:before {
+    bottom: 8px;
+}
+
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #09b000;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+.menu-content span {
+    font-size: 13px;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.br {
+    display:none;
+}
+
+.back {
+    background-color: #00ffd5;
+    color: #000;
+    font-size: 35px;
+    width: 70px;
+    height: 70px;
+    padding: 10px 10px 10px 17px;
+    border-radius: 35px;
+    position:fixed;
+    top:90%;
+    left:93%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+h3 {
+    font-size: 30px;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    font-family: KaiTi;
+    color: #910e00;
+}
+h4 {
+    font-size: 28px;
+    text-align: center;
+    font-family: KaiTi;
+    margin-bottom: 8px;
+}
+h5 {
+    font-size: 26px;
+    text-align: center;
+    font-family: SimHei;
+    color: #910e00;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.single {
+    width: 96%;
+    display: block;
+    border: 3px solid green;
+    margin-bottom: 5px;
+}
+
+.double {
+    width: 48%;
+    border: 3px solid green;
+}
+.box {
+    width:60%;
+    height: 200px;
+    border: 15px inset #c0c0c0;
+    overflow-y: scroll;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.box a {
+    font-size: 24px;
+    font-family: KaiTi;
+    line-height: 38px;
+    color: blue;
+
+}
+
+.link1 {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.link1-main {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.link1 p {
+    font-size: 22px;
+    font-family: SimHei;
+}
+
+.yi {
+    width:25%;
+    display: block;
+    float: left;
+}
+
+.yi p {
+    margin-top: 0;
+    border-left: 3px solid green;
+    padding-left: 2px;
+}
+
+.link12 {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.link12-main {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.link12 p {
+    font-size: 22px;
+    font-family: SimHei;
+}
+
+.shier {
+    width:33%;
+    display: block;
+    float: left;
+}
+
+.shier p {
+    margin-top: 0;
+    border-left: 3px solid green;
+    padding-left: 2px;
+}
+
+.link11 {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.link11 p {
+    font-size: 22px;
+    font-family: SimHei;
+    margin-top: 0;
+}
+
+.link11-img img {
+    width: 16%;
+    border: 3px solid green;
+}
+
+.link10 {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.link10 p {
+    font-size: 22px;
+    font-family: SimHei;
+    margin-top: 0;
+}
+
+.link10-img img {
+    border: 3px solid green;
+    width: 33%;
+}
+
+.link9 {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.link9-main {
+    overflow: hidden;
+}
+
+.link9 p {
+    font-size: 22px;
+    font-family: SimHei;
+    margin-top: 0;
+}
+
+.fallmoon img {
+    border: 3px solid green;
+    width: 33%;
+}
+
+.gongshi img {
+    border: 3px solid green;
+    width: 49%;
+}
+
+.jiu {
+    width:25%;
+    display: block;
+    float: left;
+}
+
+.jiu p {
+    margin-top: 0;
+    border-left: 3px solid green;
+    padding-left: 2px;
+}
+
+.link8 {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.link8-main {
+    overflow: hidden;
+}
+
+.link8 p {
+    font-size: 22px;
+    font-family: SimHei;
+    margin-top: 0;
+}
+
+.report-8 img {
+    border: 3px solid green;
+    width: 33%;
+}
+
+.ba {
+    width:25%;
+    display: block;
+    float: left;
+}
+
+.ba p {
+    margin-top: 0;
+    border-left: 3px solid green;
+    padding-left: 2px;
+}
+
+.link7 {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.link7-main {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.link7 p {
+    font-size: 22px;
+    font-family: SimHei;
+}
+
+.qi {
+    width:25%;
+    display: block;
+    float: left;
+}
+
+.qi p {
+    margin-top: 0;
+    border-left: 3px solid green;
+    padding-left: 2px;
+}
